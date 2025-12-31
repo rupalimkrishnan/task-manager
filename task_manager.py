@@ -1,5 +1,3 @@
-print("Welcome to Task Manager")
-
 tasks = []
 
 def add_task():
@@ -16,5 +14,20 @@ def list_tasks():
     for i, task in enumerate(tasks, 1):
         print(f"{i}. {task}")
 
-add_task()
-list_tasks()
+while True:
+    print("\n--- Task Manager ---")
+    print("1. Add Task")
+    print("2. List Tasks")
+    print("3. Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        add_task()
+    elif choice == "2":
+        list_tasks()
+    elif choice == "3":
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Try again.")
