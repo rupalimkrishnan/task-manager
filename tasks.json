@@ -1,7 +1,12 @@
 [
     {
         "id": 1,
-        "title": "study",
+        "title": "Study python",
+        "status": "done"
+    },
+    {
+        "id": 2,
+        "title": "work",
         "status": "pending"
     }
 ]
